@@ -1,0 +1,6 @@
+C:\Users\Student\Desktop\Yong'sTemp\Learning\Learning\obj\Debug\Learning.csprojAssemblyReference.cache
+C:\Users\Student\Desktop\Yong'sTemp\Learning\Learning\bin\Debug\Learning.exe.config
+C:\Users\Student\Desktop\Yong'sTemp\Learning\Learning\bin\Debug\Learning.exe
+C:\Users\Student\Desktop\Yong'sTemp\Learning\Learning\bin\Debug\Learning.pdb
+C:\Users\Student\Desktop\Yong'sTemp\Learning\Learning\obj\Debug\Learning.exe
+C:\Users\Student\Desktop\Yong'sTemp\Learning\Learning\obj\Debug\Learning.pdb
