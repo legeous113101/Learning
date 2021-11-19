@@ -8,9 +8,50 @@ namespace Learning
 {
     class Program
     {
+<<<<<<< HEAD
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello");
         }
     }
+=======
+
+        public static void Main(string[] args)
+        {
+        }
+    }
+
+
+    class AstarTest
+    {
+        Node[,] nodes;
+        static AstarTest test;
+        public static AstarTest Instance
+        {
+            get
+            {
+                if (test == null) test = new AstarTest {width = 10, height = 10};
+                return test;
+            }
+        }
+        public int width, height;
+    }
+
+    class Node
+    {
+        public int ManhattanDistance
+        {
+            get
+            {
+                if (x < 0 || y < 0) throw new Exception();
+                int rtx = AstarTest.Instance.width - (x + 1);
+                int rty = AstarTest.Instance.width - (y + 1);
+                return rtx + rtx;
+            }
+        }
+        public int cost;
+        public int x = -1;
+        public int y = -1;
+    }
+>>>>>>> 70e7cb8c1aace5610e33b7a1b0ab66e6fb1bce9a
 }
