@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,34 +13,6 @@ namespace Learning
         }
     }
 
-
-    class AstarTest
-    {
-        public List<Node> open = new List<Node>();
-        public List<Node> close = new List<Node>();
-        Node[,] map = null;
-
-        public void InitializeMap(int width, int height)
-        {
-
-        }
-
-        public void SetObstacle(Vector2[] obstaclesLoc)
-        {
-
-        }
-        static AstarTest test;
-        public static AstarTest Instance
-        {
-            get
-            {
-                if (test == null) test = new AstarTest {width = 10, height = 10};
-                return test;
-            }
-        }
-        public int width, height;
-    }
-
     class Node
     {
         Vector2 location = new Vector2();
@@ -49,6 +20,9 @@ namespace Learning
         public double costFromTarget;
         public double totalCost;
         public Node parent;
+        public bool isObstacle = false;
+        public bool isStartNode = false;
+        public bool isGoalNode = false;
     }
 
     class Vector2

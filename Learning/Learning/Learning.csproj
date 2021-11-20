@@ -40,6 +40,7 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AstarTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="TreeSample.cs" />
   </ItemGroup>
