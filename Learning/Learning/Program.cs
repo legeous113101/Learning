@@ -8,14 +8,6 @@ namespace Learning
 {
     class Program
     {
-<<<<<<< HEAD
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("Hello");
-        }
-    }
-=======
-
         public static void Main(string[] args)
         {
         }
@@ -53,5 +45,4 @@ namespace Learning
         public int x = -1;
         public int y = -1;
     }
->>>>>>> 70e7cb8c1aace5610e33b7a1b0ab66e6fb1bce9a
 }
