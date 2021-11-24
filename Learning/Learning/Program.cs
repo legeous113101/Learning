@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Learning
 {
@@ -9,23 +12,23 @@ namespace Learning
     {
         public static void Main(string[] args)
         {
+            var test = new Test();
+            test.InitializeMap(10, 10);
+            IOTest.WriteSomething();
+            Console.ReadLine();
         }
     }
 
-    class Node
+    class IOTest
     {
-        Vector2 location = new Vector2();
-        public double costFromStart;
-        public double costFromTarget;
-        public double totalCost;
-        public Node parent;
-        public bool isObstacle = false;
-        public bool isStartNode = false;
-        public bool isGoalNode = false;
+        public static void WriteSomething()
+        {
+            string myPath = "C:/Users/Student/Desktop/TestStuff/abc.txt";
+            StreamWriter writer = new StreamWriter(myPath);
+            string buildString = "Hi Windows";
+            writer.WriteLine(buildString);
+            writer.Close();
+        }
     }
 
-    class Vector2
-    {
-        public int x, y;
-    }
 }
