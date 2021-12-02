@@ -19,7 +19,7 @@ public class ObjectPool
         mInstance = this;
     }
 
-    public void InitData1(Object prefab, int iCount)
+    public void InitData1(Object prefab, int iCount) // 在這裡Instantiate剩下的方法都是管理已生成的物件而已 
     {
         mData1Container = new List<cObjectData>();
         for(int i = 0; i < iCount; i++)
